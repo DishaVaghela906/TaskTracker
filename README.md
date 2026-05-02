@@ -11,6 +11,7 @@ Installation
 Clone the repository:
 
 git clone https://github.com/DishaVaghela906/TaskTracker.git
+
 cd TaskTracker
 Download the json-simple-1.1.1.jar file from the browser and put in size the folder
 Compile the source code:
@@ -20,31 +21,31 @@ Run the application:
 
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker <command> [arguments]
 Usage
-# Adding a new task
+Adding a new task
 java TaskCLIApp add 1 "Buy groceries" todo
-# Output: Task added successfully (ID: 1)
+Output: Task added successfully (ID: 1)
 
-# Updating a task
+Updating a task
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker update 1 "Buy groceries and cook dinner"
-# Output: Task updated successfully (ID: 1)
+Output: Task updated successfully (ID: 1)
 
-# Deleting a task
+Deleting a task
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker delete 1
-# Output: Task deleted successfully (ID: 1)
+Output: Task deleted successfully (ID: 1)
 
-# Marking a task as in progress
+Marking a task as in progress
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker mark-in-progress 1
-# Output: Task marked as in progress (ID: 1)
+Output: Task marked as in progress (ID: 1)
 
-# Marking a task as done
+Marking a task as done
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker mark-done 1
-# Output: Task marked as done (ID: 1)
+Output: Task marked as done (ID: 1)
 
-# Listing all tasks
+Listing all tasks
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker list
-# Output: List of all tasks
+Output: List of all tasks
 
-# Listing tasks by status
+Listing tasks by status
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker list todo
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker list in-progress
 java -cp ".;json-simple-1.1.1.jar" model.TaskTracker list done
